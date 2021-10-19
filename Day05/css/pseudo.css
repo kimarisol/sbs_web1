@@ -12,20 +12,48 @@ section {
 
 
 /* TODO 여기에 작성해보세요:) */
-
-
-/* TODO 여기에 작성해보세요:) */
-
-
-/* TODO 여기에 작성해보세요:) */
+section:first-of-type { color: #bc1212; }
 
 
 
 /* TODO 여기에 작성해보세요:) */
+section:last-of-type:first-letter {
+	font-size: 2.4em;
+	float: left;
+	padding: 0 2px;
+	margin: -1px 3px 0 0;
+	font-weight: bold;
+	color: #f00;
+}
+
+
+/* TODO 여기에 작성해보세요:) */
+section em {
+	display: block;
+	text-align: center;
+	padding: 15px;
+	position: relative;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+}
 
 
 
 /* TODO 여기에 작성해보세요:) */
+section em::before [
+	/* em 부분에 ::before 적용 "(따옴표) 효과 */
+	content: ""
+	padding-right: 0.5em
+]
+
+
+
+/* TODO 여기에 작성해보세요:) */
+section em::after {
+	/* em 부분에 ::after 적용 "(따옴표) 효과 */
+	content: "/'"
+}
 
 
 
