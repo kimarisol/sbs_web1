@@ -2,19 +2,48 @@
 
 form label {
 	/* TODO 여기에 작성해보세요:) */
+	display: inline-block;
+	width: 100px;
 }
 
 
 /* TODO 여기에 작성해보세요:) */
+input[type^='t'] ,
+textarea {
+	border: 1px solid #ccc;
+	padding: 8px;
+	border-radius: 5px;
+	width: 300px;
+}
 
 
 /* TODO 여기에 작성해보세요:) */
-
+label[for^="co"] {
+	position: relative;
+	top: -90px
+}
 
 /* TODO 여기에 작성해보세요:) */
-
+input[type^="b"] {
+	padding: 10px 20px;
+	border: 1px solid #bc3636;
+	background-color: #bc0202;
+	color: #fff;
+	border-radius: 50px;
+}
 
 /* TODO 여기에 작성해보세요:) */
+/* :hover  -요소에 마우스를 올린 이벤트에 스타일 지정 */
+input[type^='b']:hover {
+	border: 1px solid #dd8c8c;
+	background-color: #dd8c8c;
+}
+
+/* :active -버튼 경우, 마우스 클릭을 누른 순간부터 뗀 순간까지 스타일 지정*/
+input[type^='b']:active {
+	border: 1px solid #ce4f4f;
+	background-color: #d83939;
+}
 
 
 
