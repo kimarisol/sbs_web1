@@ -1,0 +1,11 @@
+
+.box {
+    height: 200px;
+    margin: 50px;
+}
+
+.bottom { background-image: linear-gradient(to bottom, yellow, orange, red);}
+.top { background-image: linear-gradient(to top, yellow, orange, red);}
+.left { background-image: linear-gradient(to left, yellow, orange, red);}
+.right { background-image: linear-gradient(to right, yellow, orange, red);}
+

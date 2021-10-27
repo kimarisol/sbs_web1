@@ -1,0 +1,49 @@
+
+.container {
+    text-align: center;
+}
+
+.inner {
+    width: 70vW;
+    min-height: 80vh;
+    margin: 0 auto;
+
+
+     /* inline-block 태그 사이의 공백(엔터) 버그 */
+     font-size: 0;
+     letter-spacing: 0;
+     word-spacing: 0;
+}
+
+.inner .item {
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+    height: 20vh;
+    border: 10x solid black;
+    box-sizing: border-box;
+
+ 
+}
+
+.color1 { background-color: tomato;}
+.color2 { background-color: dodgerblue;}
+.color3 { background-color: mediumseagreen;}
+.color4 { background-color: slateblue;}
+
+.color5 { background-color: #9c88ff;}
+.color6 { background-color: #273c75;}
+.color7 { background-color: #e84118;}
+.color8 { background-color: #55efc4;}
+
+.color9 { background-color: rgb(0, 255, 0);}
+.color10 { background-color:rgb(0, 0, 255);}
+.color11 { background-color:rgba(0, 0, 255, 0.2);}
+.color12 { background-color: rgba(0, 255, 255, 0.8);}
+
+.color13 { background-color: hsl(147, 50%, 47%);}
+.color14 { background-color: hsl(248, 53%, 58%)}
+.color15 { background-color: hsla(9, 100%, 64%, 0.2);}
+.color16 { background-color: hsla(9, 100%, 64%, 0.8);}
+
+
