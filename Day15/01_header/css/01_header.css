@@ -40,6 +40,12 @@ header a.logo {
     float: right;
 }
 
+.header::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
 section {
     width: 1200px;
     height: 300px;
