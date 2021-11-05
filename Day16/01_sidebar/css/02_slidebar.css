@@ -7,7 +7,6 @@
     position: fixed;
     height: 100%;
     overflow: auto;
-    transition: all 1s ease-in-out;
 }
 
 .sidebar a {
@@ -31,4 +30,12 @@
     margin-left: 200px;
     padding: 10px 20px;
     height: 1000px;
+}
+
+input[name='category'] {
+    display: none;
+}
+
+input#category:checked ~ .sidebar {
+    left: 0;
 }
