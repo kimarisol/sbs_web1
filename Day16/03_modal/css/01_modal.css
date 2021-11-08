@@ -1,0 +1,136 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+a { text-decoration: none; }
+
+label#btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+input#chk-modal { display: none; }
+
+p {
+    display: inline-block;
+    margin: 27px 25px;
+    font-size: 15px;
+    line-height: 26px;
+    font-family: '';
+}
+
+a#open-modal {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 50px;
+    border: 1px solid cornflowerblue;
+    background-color: #fff;
+    border-radius: 5px;
+    color: cornflowerblue;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+div#modal-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+    transition: 0.5s;
+    transition-delay: 0.8s;
+}
+
+div#modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.4);
+    width: 340px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.5s ease;
+    transition-delay: 0.4s;
+    z-index: 0;
+}
+
+div#close {
+    position: absolute;
+    top: -10%;
+    right: 4%;
+    width: 45px;
+    height: 32px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.4s;
+    z-index: 0;
+    text-align: center;
+}
+
+span#cross1 {
+    display: inline-block;
+    width: 24px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fff;
+    transform: translate(1px) translateY(-3px) rotate(45deg);
+    transition: 0.3s ease;
+}
+
+span#cross2 {
+    display: inline-block;
+    width: 24px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fff;
+    transform: translate(1px) translateY(-24px) rotate(-45deg);
+    transition: 0.3s ease;
+}
+
+input#chk-modal:checked ~ div#modal-bg {
+    z-index: 2;
+    opacity: 0.7;
+    background-color: #aaa;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+input#chk-modal:checked ~ div#modal {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    z-index: 3;
+    transition: 0.3 ease;
+    transition-delay: 0.4s;
+}
+
+input#chk-modal:checked ~ div#modal-bg div#close {
+    opacity: 1;
+    top: 4%;
+}
+
+a#open-modal:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+div#close:hover {
+    background-color: white;
+}
+
+div#close:hover span {
+    background-color: #ddd;
+}
